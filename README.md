@@ -8,7 +8,7 @@ Given order book and trade data from a fixed 10-minute window, predict the reali
 
 ## Approach
 
-Computed weighted average price (WAP) and log returns to calculate realized volatility from order book snapshots. Engineered book, trade, and market-wide features: realized volatility over smaller windows (past 5 and 2 minutes), bid-ask spread, trading activity and volume, and average realized volatility across all stocks in the same window. Compared a naive baseline (past realized volatility), Linear Regression, and LightGBM, using grouped time-window cross-validation splits so the same 10-minute window never appeared in both training and validation.
+Computed weighted average price (WAP) and log returns to calculate realized volatility from order book snapshots. Engineered book, trade, and market-wide features: realized volatility over smaller windows (past 5 and 2 minutes), bid-ask spread, trading activity and volume, and average realized volatility across all stocks in the same window. Compared naive baseline (past realized volatility), Linear Regression, and LightGBM models, using grouped time-window cross-validation splits so the same 10-minute window never appeared in both training and validation.
 
 ## Result
 
